@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Recipe Book</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+    min-height: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .home {
+      min-height: 100vh;
+      background: url("background-01-port.png")
+                  center center / cover no-repeat;
+      padding: 0 9% 40px;
+  text-align: center;
+    }
+
+    .logo {
+      display: flex;
+   flex-direction: column;
+ align-items: center;
+      margin: 0 auto 4px;
+    }
+
+    .carrot {
+      width: 38px;
+  height: 110px;
+    }
+
+    .logo-text {
+width: 180px;
+      max-width: 100%;
+  height: auto;
+      margin-top: -2px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .menu a {
+      display: flex;
+    align-items: center;
+      justify-content: center;
+      height: 63px;
+border: 3px solid white;
+    color: white;
+text-decoration: none;
+font-size: 18px;
+      font-weight: bold;
+      background: transparent;
+    }
+
+    .menu a:hover {
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    @media (min-width: 650px) {
+      .home {
+ background-image: url("background-01-land.png");
+      }
+
+      .menu {
+    max-width: 520px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="home">
+
+    <header class="logo">
+      <img src="logo-img.png"
+           class="carrot"
+           alt="Carrot Logo">
+
+      <img src="logo-text.png"
+           class="logo-text"
+           alt="MyRecipeBook">
+    </header>
+
+    <nav class="menu">
+      <a href="meals.html">MEALS</a>
+      <a href="drinks.html">DRINKS</a>
+      <a href="desserts.html">DESSERTS</a>
+    </nav>
+
+  </main>
+</body>
+</html>
